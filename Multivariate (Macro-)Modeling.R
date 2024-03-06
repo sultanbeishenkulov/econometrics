@@ -23,7 +23,7 @@ library("rugarch")
 library("parallel")
 UTblue <- rgb(5/255, 110/255, 167/255, 1)
 
-#1. (7 points) Multivariate (Macro-)Modeling
+#1. Multivariate (Macro-)Modeling
 #1.1 loading data and calculating the inflation rate
 DATA <- read_excel("Assignment3.xlsx")
 DATA$year = lubridate::year(DATA$date)  #we have the monthly data, we need a yearly inflation
@@ -151,7 +151,6 @@ plot(irf_FEDFUNDS, xlab = "", main = "Impulse: FEDFUNDS",
 --------------------------------------------------------------------------------------------
   
   
-# 2. (3 points) Multivariate GARCH Modeling
   
 #2.1
 help(priceR)
